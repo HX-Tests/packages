@@ -52,7 +52,7 @@ Set a theme by name:
 
 ```typst
 #show: assignment.with(
-  ...
+  //...
   theme: "purple",
 )
 ```
