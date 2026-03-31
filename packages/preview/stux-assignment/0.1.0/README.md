@@ -61,7 +61,7 @@ Or pass a custom color dictionary:
 
 ```typst
 #show: assignment.with(
-  ...
+  //...
   theme: (bg: rgb("#e6f0ff"), fr: rgb("#0055aa")),
 )
 ```
@@ -103,7 +103,7 @@ Override the default font family and size:
 
 ```typst
 #show: assignment.with(
-  ...
+  //...
   font-size: 12pt,
   font-family: "New Computer Modern",
 )
