@@ -135,4 +135,4 @@ Defaults are `11pt` and `"Linux Libertine"`.
 
 ## License
 
-This package is licensed under the [MIT License](LICENSE).
+This package is licensed under the [MIT-0 License](LICENSE).
