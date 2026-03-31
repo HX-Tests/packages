@@ -52,7 +52,7 @@ Set a theme by name:
 
 ```typst
 #show: assignment.with(
-  //...
+  // ...
   theme: "purple",
 )
 ```
@@ -61,14 +61,14 @@ Or pass a custom color dictionary:
 
 ```typst
 #show: assignment.with(
-  //...
+  // ...
   theme: (bg: rgb("#e6f0ff"), fr: rgb("#0055aa")),
 )
 ```
 
 ### Multiple Authors
 
-For group assignments, set `num_of_authors` and pass an `authors` array. The header switches to a centered layout with an author table:
+For group assignments, set `num-of-authors` and pass an `authors` array. The header switches to a centered layout with an author table:
 
 ```
           Course: CS 101
@@ -84,7 +84,7 @@ For group assignments, set `num_of_authors` and pass an `authors` array. The hea
 
 #show: assignment.with(
   title: "Group Assignment - 1",
-  num_of_authors: 3,
+  num-of-authors: 3,
   authors: (
     (name: "Alice", email: "alice@example.com", roll: "101"),
     (name: "Bob",   email: "bob@example.com",   roll: "102"),
@@ -95,7 +95,7 @@ For group assignments, set `num_of_authors` and pass an `authors` array. The hea
 ```
 
 
-When `num_of_authors` is `1` (the default), the single-author shorthand (`author`, `email`, `roll`) is used with the standard side-by-side header.
+When `num-of-authors` is `1` (the default), the single-author shorthand (`author`, `email`, `roll`) is used with the standard side-by-side header.
 
 ### Font Customization
 
@@ -103,7 +103,7 @@ Override the default font family and size:
 
 ```typst
 #show: assignment.with(
-  //...
+  // ...
   font-size: 12pt,
   font-family: "New Computer Modern",
 )
@@ -119,7 +119,7 @@ Defaults are `11pt` and `"Linux Libertine"`.
 | `author`      | `"Student Name"`                    | Single author name                           |
 | `email`       | `"email@example.com"`               | Single author email                          |
 | `roll`        | `"123456"`                          | Single author roll number                    |
-| `num_of_authors` | `1`                              | Set > 1 for multi-author table header        |
+| `num-of-authors` | `1`                              | Set > 1 for multi-author table header        |
 | `authors`     | `none`                              | Array of `(name, email, roll)` dictionaries  |
 | `course`      | `"Course Name"`                     | Course identifier                            |
 | `date`        | today's date                        | Display date                                 |

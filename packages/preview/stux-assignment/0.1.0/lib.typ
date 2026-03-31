@@ -13,8 +13,8 @@
 // ── Assignment template ────────────────────────────────────────────────────────
 // Parameters:
 //   author, email, roll   — single-author shorthand (default)
-//   num_of_authors        — set > 1 to enable multi-author table layout
-//   authors               — array of (name, email, roll) dicts (required when num_of_authors > 1)
+//   num-of-authors        — set > 1 to enable multi-author table layout
+//   authors               — array of (name, email, roll) dicts (required when num-of-authors > 1)
 //   theme                 — theme name string ("teal", "purple", …) or custom (bg: …, fr: …) dictionary
 //   font-size, font-family — document-wide typography overrides
 #let assignment(
@@ -22,7 +22,7 @@
   author: "Student Name",
   email: "email@example.com",
   roll: "123456",
-  num_of_authors: 1,
+  num-of-authors: 1,
   authors: none,
   course: "Course Name",
   date: datetime.today().display(),
@@ -44,7 +44,7 @@
   set text(font: font-family, size: font-size, lang: "en")
   set par(justify: true, first-line-indent: 0pt)
 
-  if num_of_authors > 1 {
+  if num-of-authors > 1 {
     // ── Multi-author table header ──────────────────────────────────────────
         align(center)[*Course:* #course] 
         v(-0.5cm)
@@ -55,7 +55,7 @@
         line(length: 100%, stroke: 1.5pt)
         v(-0.3cm)
     table(
-      columns: (1fr,) * num_of_authors,
+      columns: (1fr,) * num-of-authors,
       align: center + horizon,
       stroke: 0pt,
       inset: 3pt,
